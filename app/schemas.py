@@ -61,3 +61,12 @@ class TokenData(BaseModel):
 class Vote(BaseModel):
     post_id: int
     dir: Literal[0, 1]
+
+
+class ForgotPassword(BaseModel):
+    email: EmailStr
+
+
+class ReseToken(BaseModel):
+    token: str
+    new_password: str
